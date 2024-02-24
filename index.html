@@ -223,6 +223,7 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
                 src="./images/team1.jpg"
                 alt="mark-guerrero"
                 width="264"
@@ -279,6 +280,7 @@
               <img
                 class="team-img"
                 src="./images/team2.jpg"
+                srcset="./images/team2.jpg 1x, ./images/team2-2x.jpg 2x"
                 alt="tom-ford"
                 width="264"
                 height="260"
@@ -334,6 +336,8 @@
               <img
                 class="team-img"
                 src="./images/team3.jpg"
+                srcset="./images/team3.jpg 1x, ./images/team3-2x.jpg 2x"
+                
                 alt="camila-garcia"
                 width="264"
                 height="260"
@@ -388,6 +392,7 @@
               <img
                 class="team-img"
                 src="./images/team4.jpg"
+                srcset="./images/team4.jpg 1x, ./images/team4-2x.jpg 2x"
                 alt="daniel-wilson"
                 width="264"
                 height="260"
@@ -450,13 +455,24 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-img-container">
-              <img
-                class="portfolio-img"
-                src="./images/bankingapp.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
+                <!-- <picture>
+                  <source media="(min-width: 1158px)" srcset="./images/bannkingapp.png 1x, ./images/bannkingapp2x.png 2x">
+              
+                
+                  <source media="(min-width: 768px)" srcset="./images/bankingapp-tab.jpg 1x, ./images/bannkingapp-tab2x.png 2x">
+              
+                
+                  <source media="(max-width: 767px)" srcset="./images/bankingapp-mob.jpg 1x, ./images/bannkingapp-mob2x.png 2x">
+                  
+                </picture> -->
+                <img
+                  class="portfolio-img"
+                  src="./images/bannkingapp.png"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+             
               <p class="portfolio-container-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
               
@@ -467,12 +483,24 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img-container">
-              <img
-                src="./images/cashlesspayment.jpg"
+                <!-- <picture>
+                  <source media="(min-width:1158px)" srcset="./images/cashlesspayment.png 1x,./images/cashlesspayment2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="./images/cashlesspayment-tab.jpg 1x, ./images/cashlesspayment-tab2x.jpg 2x">
+                  <source media="(max-width:767px)" srcset="./images/cashlesspayment-mob.jpg 1x, ./images/cashlesspayment-mob2x.jpg 2x">
+                  <img
+                src="./images/cashlesspayment.png"
                 alt="Cashless Payment"
                 width="360"
                 height="300"
               />
+                </picture> -->
+                <img
+                src="./images/cashlesspayment.png"
+                alt="Cashless Payment"
+                width="360"
+                height="300"
+              />
+              
               <p class="portfolio-container-text"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
               <div class="container-portfolio">
@@ -482,6 +510,12 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img-container">
+                <!-- <picture>
+                  <source media="(min-width:1158px)" srcset="">
+                  <source media="(min-width:768px)" srcset="">
+                  <source media="(max-width:767px)" srcset="">
+                </picture> -->
+
               <img
                 src="./images/meditationapp.jpg"
                 alt="Meditation App"
@@ -497,6 +531,11 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img-container">
+                <picture>
+                  <source media="(min-width:1158px)" srcset="">
+                  <source media="(min-width:768px)" srcset="">
+                  <source media="(max-width:767px)" srcset="">
+                </picture>
               <img
                 src="./images/taxiservice.jpg"
                 alt="Taxi Service"
@@ -512,6 +551,11 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img-container">
+                <picture>
+                  <source media="(min-width:1158px)" srcset="">
+                  <source media="(min-width:768px)" srcset="">
+                  <source media="(max-width:767px)" srcset="">
+                </picture>
               <img
                 src="./images/screenillustration.jpg"
                 alt="Screen Illustrations"
@@ -527,6 +571,11 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-img-container">
+                <picture>
+                  <source media="(min-width:1158px)" srcset="">
+                  <source media="(min-width:768px)" srcset="">
+                  <source media="(max-width:767px)" srcset="">
+                </picture>
               <img
                 src="./images/onlinecourses.jpg"
                 alt="Online Courses"
@@ -622,7 +671,7 @@
     <!-- FOOTER -->
 
 <!-- MODAL -->
-    <div class="backdrop">
+ <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
           <svg class="modal-icons" width="8" height="8">
@@ -680,6 +729,6 @@
         </form>
       </div>
     </div>
-    <!-- MODAL -->
+    <!-- MODAL --> 
   </body>
 </html>
