@@ -633,7 +633,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* FOOTER */
 .footer {
-    background: var(--NAVY-BLUE, #2E2F42);
+    background:  #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -642,15 +642,39 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .container-footer{   
+   /*  display: flex;
+    align-items: baseline; */
     display: flex;
-    align-items: baseline;
+    flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    align-items: center;
+    gap: 72px;
 
    
 }
 .conteiner-footer-logo{
  
- margin-right: 120px;
- margin-left: 156px; 
+/*  margin-right: 120px;
+ margin-left: 156px;  */
+ display: flex;
+flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+justify-content: center; /* Центруємо елементи по горизонталі */
+align-items: center;
+
+}
+.container-soc-icon{
+    display: flex;
+flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+justify-content: center; /* Центруємо елементи по горизонталі */
+align-items: center;
+}
+.footer-conteiner-input{
+    /* margin-left: 80px; */
+    display: flex;
+flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+justify-content: center; /* Центруємо елементи по горизонталі */
+align-items: center;
+
 }
 
 .footer-logo {
@@ -690,9 +714,7 @@ color: #FFFFFF;
 margin-bottom: 16px;
 }
 
-.container-soc-icon {
- 
-}
+
 
 .icon-list-footer {
     display: flex;
@@ -722,10 +744,17 @@ margin-bottom: 16px;
 
 }
 
+
  
 .footer-form{
+/*     display: flex;
+    gap: 24px; */
+    
     display: flex;
-    gap: 24px;
+    flex-direction: column; /* Змінюємо орієнтацію на вертикальну */
+    justify-content: center; /* Центруємо елементи по горизонталі */
+    align-items: center;
+    
 }
 .footer-email-text{
     margin-bottom: 16px;
@@ -737,7 +766,8 @@ color: #ffffff;
 
 }
 .footer-input{
-    width: 264px;
+   /*  width: 264px; */
+   width: 288px;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -748,6 +778,9 @@ color: #ffffff;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
     color: #ffffff;
+    margin-bottom: 16px;
+
+
 }
 .placeholder{
     color: #ffffff;
@@ -773,6 +806,7 @@ border:none;
 }
 .footer-icon-btn{
     margin-left: 16px;
+   
 }
 
 
@@ -791,8 +825,10 @@ border:none;
   
 }
 .modal{
-    width: 408px;
-    min-height: 584px;
+   /*  width: 408px;
+    min-height: 584px; */
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
  position: absolute;
 top: 50%;
@@ -832,7 +868,8 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title{
     font-weight: 500;
-    max-width: 360;
+    /* max-width: 360; */
+    min-width: 100%;
     margin-bottom: 16px;
 font-size: 16px;
 line-height: 1.5;
@@ -852,7 +889,8 @@ color: #2E2F42
     outline: transparent;
 border-radius: 4px;
 padding-left: 38px;
-width: 360px;
+/* width: 360px; */
+width: 100%;
 height: 40px;
 transition-duration: 300ms;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -868,7 +906,8 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-label{
-    width: 58px;
+  /* width: 58px; */
+  width: 34px;
     height: 14px;
     display: block;
     margin-bottom: 4px;
@@ -937,15 +976,12 @@ justify-content: center;
 fill: transparent;
 }
 .check-text a{
-    line-height: 133%;
+    line-height: 1.33;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
 }
-.check-text span{
 
-
-}
 
 .check-icon{
     display: inline-flex;
@@ -974,6 +1010,7 @@ border:none;
 margin:0 auto;
 }
 .privacy{
+    text-decoration: underline;
    color: #4d5ae5;
 }
 /* MODAL */
@@ -1051,6 +1088,57 @@ width: 736px;
     width: calc((100% - 24px) / 2);
    }
    /* FOOTER */
+   .container-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    
+   }
+   .conteiner-footer-logo{
+    display: flex;
+    align-items: flex-start;
+    
+   }
+   .container-soc-icon{
+    display: flex;
+    align-items: flex-start;
+
+   }
+   .footer-conteiner-input{
+    display: flex;
+    align-items: flex-start;
+   }
+   .footer-form{
+    display: flex;
+    flex-direction: row; /* Змінюємо орієнтацію на вертикальну */
+    /* Видалення центрування */
+   
+    align-items: flex-start;
+    gap:24px;
+
+   }
+   .footer-input{
+    width: 264px;
+   }
+   /* MODAL */
+   .modal{
+    width: 408px;
+    min-height: 584px;
+   }
+   .modal-titel{
+    max-width: 360px;
+   }
+   .modal-input{
+    width: 360px;
+   }
+   .modal-label{
+    width: 58px;
+   }
+
 }
 
 
@@ -1139,8 +1227,23 @@ width: 736px;
 }
 /* PORTFOLIO */
 /* FOOTER */
-
+.container-footer{
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+}
+.footer-conteiner-input{
+    padding-left: 80px;
+}
+.conteiner-footer-logo{
+ padding-right: 110px;
+}
 /* FOOTER */
+/* MODAL */
+.modal{
+
+}
+
 
 
 }
