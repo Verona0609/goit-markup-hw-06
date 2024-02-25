@@ -37,7 +37,7 @@ img {
 /* width: 1158px; */
 /* padding: 0 15px; */
 width: 320px;
-padding: 16px;
+padding: 0 16px;
 margin: 0 auto;
 } 
 
@@ -272,6 +272,7 @@ color: #434455;
     background-size: cover;
    /* padding: 188px 0 188px; */
    padding-top: 72px;
+ 
   
   
 
@@ -344,8 +345,9 @@ background-color: #404BBF
     background-color: #FFFFFF;
 /*     padding-bottom: 120px;
     padding-top: 120px; */
-    padding-bottom: 48px;
-    padding-top: 48px;
+    padding-bottom: 48;
+   padding-top: 48px;
+   
  }
  .visually-hidden {
      position: absolute;
@@ -1046,11 +1048,20 @@ flex-direction: column;
 gap: 12px;
 
 }
+.header-contact{
+    font-size: 12px;
+}
 
     
     /* FEATURES */
+    .features{
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
     .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.png);
+        padding-top: 112px;
+        padding-bottom: 112px;
        
     }
     @media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
@@ -1068,6 +1079,7 @@ gap: 12px;
 
     .fatures-subtitel {
         text-align:left;
+
     }
 
     .features-list{
@@ -1214,9 +1226,11 @@ width: 736px;
     margin-bottom: 8px;
 }
 .fatures-subtitel{
-    font-style: 20px;
+
     font-weight: 500;
-    line-height: 1.2;
+font-size: 20px;
+line-height: 120%;
+letter-spacing: 0.02em;
 }
 .fetures-item-text{
     font-weight: 400;
